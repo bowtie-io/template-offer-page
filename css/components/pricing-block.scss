@@ -1,0 +1,47 @@
+---
+# this front matter renders the file as css
+---
+
+/******************* Pricing Block ****************************/
+
+#pricing-block {
+  h3 {
+    color: #000;
+    text-shadow: none !important;
+    font-weight:600;
+    text-align:center;  
+    }
+  hr {
+    margin:5px auto 20px;
+    }
+  h4 {
+  color: #666;
+  font-weight:300;
+  font-size: .75em;
+  text-align:center;
+  }
+  small{
+  text-align:center;
+  float:none;
+  }
+  .price {
+  font-size: 5em;
+  font-weight: 600;
+  letter-spacing:-.6pt;
+  margin:0 auto;
+  text-align:center;
+  }
+  .price .dollar {
+  font-size: 20px;
+  font-weight: 300;
+  vertical-align:super;
+  margin-right:-2px;
+  font-style:italic;
+  }
+  .price .unit {
+  color: #999;
+  font-size: 13px;
+  font-weight: normal;
+  margin-left:-10px;
+  }
+}

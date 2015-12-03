@@ -1,0 +1,30 @@
+<link rel="stylesheet" type="text/css" href="/css/components/pricing-block.css"/>
+
+<div id="pricing-block" class="">
+  <div class="price-details pull-center">
+    <div class='pricing'>
+      <div class='price row'>
+        <span class="dollar">$</span>
+        {{ offer.price | divided_by: 100 }}
+        <span class='unit'>
+          /{{ offer.unit }}
+        </span>
+      </div>
+      {% include checkout-button.html %}
+      <div class='row'>
+        <div class='col-xs-4'>
+          <h4 class="msrp">Value</h4>
+          <h3 class="msrp">${{ offer.msrp }}</h3>
+        </div>
+        <div class='col-xs-4'>
+          <h4 class="discount">Discount</h4>
+          <h3 class="discount">{{ offer.percent-off }}</h3>
+        </div>
+        <div class='col-xs-4'>
+          <h4 class="savings">Savings</h4>
+          <h3 class="savings">{{ offer.savings }}</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

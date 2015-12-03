@@ -1,0 +1,54 @@
+---
+layout: deal
+permalink: 
+offer: tapasoffer
+title: Two For One Tapas!
+subtitle: Example limited time deal page connected to Stripe Checkout
+masthead-img: false
+masthead-img-pat: false
+author: john
+categories:
+- Special Offer
+- BowTie
+- Example Site
+elsewhere:
+elsewhere-url:
+comments: false
+exclude_from_nav: true
+share: false
+---
+{% if page.offer %}
+  {% assign offer = site.data.offers[page.offer] %}
+{% else %}
+  {% assign offer = site.data.offers.defaultoffer %}
+{% endif %}
+
+<!-- to create a new offer page, duplicate this page and update the offer information in your offers.yml file -->
+
+<div class="row">
+  <div class="col-sm-8">
+    {% include deal-sections/product-img.html %}
+  </div>
+  <div class="col-sm-4">
+    {% include deal-sections/price-block.html %}
+    <hr>
+    {% include deal-sections/remaining.html %}
+    <hr>
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-8">
+    {% include deal-sections/product-info.html %}
+    <hr>
+    {% include deal-sections/fine-print.html %}
+  </div>
+  <div class="col-sm-4">
+    {% include deal-sections/redemption.html %}
+  </div>
+</div>
+<hr>
+<div class="row">
+  <div class="col-sm-12">
+  {% include deal-sections/deal-location.html %}
+  </div>
+</div>

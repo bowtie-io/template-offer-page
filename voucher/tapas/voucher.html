@@ -1,0 +1,47 @@
+---
+layout: page
+permalink: /voucher/tapas/
+offer: tapasoffer
+title: Receipt
+subtitle: Follow these instructions to redeem your offer.
+masthead-img: false
+masthead-img-pat: false
+author: john
+categories:
+- Special Offer
+- BowTie
+- Example Site
+elsewhere:
+elsewhere-url:
+comments: false
+exclude_from_nav: true
+share: false
+---
+
+{% if page.offer %}
+  {% assign offer = site.data.offers[page.offer] %}
+{% else %}
+  {% assign offer = site.data.offers.defaultoffer %}
+{% endif %}
+
+<p>Thanks for purchasing {{ offer.name }}. Your receipt is below:</p>
+
+<div id="product">
+  <h4>Purchase Details:</h4>
+  <p><strong>{{ offer.name }}</strong></p>
+  <p>{{ offer.redemptionnotice }}</p>
+  <p>Your Price:
+    <span class="dollar">$</span>
+  {{ offer.price | divided_by: 100 }}
+  <span class='unit'>
+    /{{ offer.unit }}
+  </span> (You saved {{ offer.savings }}!)</span>
+</div>
+
+<div id="redemption">
+  <h4>How To Redeem</h4>
+  <p>{{ offer.redemption-details }}</p>
+</div>
+
+<br />
+<em>This sample voucher page is visible to anyone on development, but inaccessible on production without a successful purchase.</em>

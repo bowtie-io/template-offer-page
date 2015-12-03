@@ -1,0 +1,8 @@
+{
+  "name": "Offer Page",
+  "description": "Daily deal site with Stripe Checkout.",
+  "author": "Chad Person <chad@bowtie.io>",
+  "version": "0.0.1",
+  "image_url": null,
+  "docs_link": "/docs/#projects"
+}

@@ -1,0 +1,30 @@
+<script type="text/javascript" src="/js/map.js"></script>
+<link rel="stylesheet" type="text/css" href="/css/components/map.css"/>
+
+<div class="clearfix">
+  <h3>Where To Redeem</h3>
+
+  {% if offer.latlng %}
+  <div class="row col-sm-6 deal-map">
+    <div id="map" data-coords="{{ offer.latlng }}">
+      <a name="#map"></a>
+      <div id="map-canvas"></div>
+    </div>
+  </div>
+  {% endif %}
+  {% if offer.address %}
+  <div class="col-sm-4 col-xs-9">
+    <div class="company-location">
+      <h4>Location</h4>
+      <p>{{ offer.company }}</p>
+      <p>{{ offer.address }}, {{ offer.city }}, {{ offer.state }} {{ offer.zip }}, {{ offer.country }}</p>
+      <p>{{ offer.phone }}</p>
+      <h4>Company Website</h4>
+      <p><a href="{{ offer.website }}" target="_blank">{{ offer.website }}</a></p>
+    </div>
+  </div>
+  <div class="col-sm-2 col-xs-3">
+    <img src="/img/logo-badge.png" class="deal-logo">
+  </div>
+  {% endif %}
+</div>

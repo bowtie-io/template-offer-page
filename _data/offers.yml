@@ -1,0 +1,64 @@
+# offer settings - each offer will require an entry, or will fallback to the default offer values
+defaultoffer: # offers without a unique offer name will fall back to these values
+  name:
+  description:
+  short-description:
+  deal-img: false
+  expiration-date: 2015/12/31 # (e.g. 'yyyy/mm/dd')
+  expiration-msg: Sorry, this deal is no longer available.
+  productid: # (e.g. 'product_000a00a00aaa0')
+  price: null # (e.g. '2000' = $20)
+  unit: null # (e.g. 'each' or 'per dozen')
+  msrp: null # (e.g. '40' = $40)
+  percent-off: null # (e.g. '50%')
+  savings: null
+  fineprint:  # (e.g. 'Promotional value expires 120 days after purchase....')
+  redemption-details: # (e.g. 'Redeem your offer...')
+  redemption-page-url: # (e.g. '/vouchers/tapas')
+  company:
+  address:
+  city:
+  state:
+  zip:
+  country:
+  phone:
+  website:
+  latlng:  # (e.g. '39.733536,-104.992611')
+  email: # (e.g. 'help@bowtie.io')
+  twitter: # (e.g. 'bowtie.io')
+  facebook:  # (e.g. 'bowtie.io')
+  instagram:  # (e.g. 'bowtie_io')
+  linkedin:  # (e.g. 'company/bowtie')
+  youtube:  # (e.g. 'channel/UCovWO5keLOLcLu8WdO-ABJw')
+
+tapasoffer:
+  name: Half Off Tapas - Example Deal
+  description:  This is an example BowTie template that shows you how to make a daily deal style offer site using our Stripe Checkout integration and static components. For delicious entrees and small plates that combine both classic and innovative Mediterranean cooking styles, look no further than this cozy and totally fake dining destination has earned rave reviews for its warm service and artfully presented dishes.
+  short-description: Chefs special Tapas - Dinner for Two or Four.
+  deal-img: /img/product1.jpg
+  expiration-date: 2016/01/01 # (e.g. 'yyyy/mm/dd')
+  expiration-msg: Sorry, this deal is no longer available.
+  productid: product_853d0a7ba2 # (e.g. 'product_000a00a00aaa0')
+  price: 2000 # (e.g. '2000' = $20)
+  unit: each
+  msrp: 40
+  percent-off: 50%
+  savings: $20!
+  fineprint:  Promotional value expires 120 days after purchase. Amount paid never expires. Limit 1 per party. Limit 1 per visit. Valid only for option purchased. Appointment required. Must be 18 or older. New clients only. Merchant is solely responsible to purchasers for the care and quality of the advertised goods and services.
+  redemption-details: To redeem your Gift Card, please follow these steps - Click “Buy Now” be sure to read the minimum purchase amount, which is listed on the page and in the checkout pop up. Enter your email and card information. Click “Pay.” Your redemption is now complete! By clicking on the “Pay” button, you agree with our terms of use. Print your certificate (or display the certificate on your smartphone) from the confirmation page, or wait for the certificate to be emailed to you.
+  redemption-page-url: /vouchers/tapas
+  company: The Best Tapas on Platte
+  address: 1644 Platte
+  city: Denver
+  state: CO
+  zip: 80202
+  country: USA
+  phone: 555-867-5309
+  website: https://example.com
+  latlng: 39.733536,-104.992611
+  email: deal@example.com
+  twitter: deal-page
+  facebook: deal-page-fb
+  instagram: deal-page-ig
+  linkedin: deal-page-li
+  youtube: deal-page-youtube

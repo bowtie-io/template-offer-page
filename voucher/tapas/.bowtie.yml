@@ -1,0 +1,6 @@
+# /tapasoffer/.bowtie.yml
+
+permits:
+  profile:
+    - purchases:
+      product_853d0a7ba2: true
