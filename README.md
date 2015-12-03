@@ -1,6 +1,6 @@
 # Offer Page Template
 
-'Offer Page' is a Jeykll template that mimics a daily deal site offer. Payments are collected using [Stripe Checkout](https://stripe.com/checkout) in conjunction with [BowTie.io](https://bowtie.io) product records. This template is meant as a learning resource. It is compatible with other BowTie components and templates, and the BowTie test environment.
+'Offer Page' is a Jeykll template that creates a daily deal style offer from a data file. Payments are collected using [Stripe Checkout](https://stripe.com/checkout) in conjunction with [BowTie.io](https://bowtie.io) product records. This template is meant as a learning resource. It is compatible with other BowTie components and templates, and the BowTie test environment.
 
 This template includes components to build 'deals' from a Jekyll data file, Stripe checkout buttons, countdown timer, authorship, category sorting, [disqus](https://disqus.com/) commenting, [addthis](http://www.addthis.com/) social sharing, error pages, a maintenance page, terms of service generation, post archives, Google maps, and user management and registration provided by BowTie.
 
